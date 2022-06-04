@@ -1,16 +1,9 @@
 class Test {
 	public static void main(String args[]) {
 		Test t1 = new Test();
-		// t1.test2();
-		t1.character();
-	}
-
-	public static void test2() {
-		String rev = "";
-		for (int i = 0; i > 5; i--) {
-			rev = rev + rev.charAt(i);
-		}
-		System.out.println(rev);
+		// t1.character();
+		// t1.missNumber();
+		math(9);
 	}
 
 	public static void missNumber() {
@@ -33,4 +26,10 @@ class Test {
 
 		System.out.println(ch);
 	}
+
+	public static void math(int num) {
+		double a = Math.sqrt(num);
+		System.out.println(a);
+	}
+
 }
