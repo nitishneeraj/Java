@@ -14,15 +14,20 @@ public class Java_Basic_Programs {
 		// ------------------------------------------------------------------
 
 		// ----------- called prime()
-		// prime(43);
-		// isPrime(23);
+		// prime(44);
+		/*
+		 * Scanner s1 = new Scanner(System.in);
+		 * System.out.println("Find no is prime/Enter any number: "); int n =
+		 * s1.nextInt(); if (isPrime(n)) { System.out.println(n + " is a prime number");
+		 * } else { System.out.println(n + " is not a prime number"); }
+		 */
 
 		// ----------Palindrome()
-		//Palindrome(454);
+		// Palindrome(454);
 		//String_Palindrome();
-		
+
 		// ----------fact()
-		//fact(5);
+		 fact(5);
 
 	}
 
@@ -69,51 +74,59 @@ public class Java_Basic_Programs {
 		}
 	}
 
-	public static void isPrime(int num) {
+	public static boolean isPrime(int num) {
 		if (num <= 1) {
-			System.out.println(num + " Not prime no");
+			return false;
 		}
 		for (int i = 2; i < Math.sqrt(num); i++) {
 			if (num % i == 0) {
-				System.out.println(num + " Not prime no");
+				return false;
 			}
 		}
-		System.out.println(num + " Prime no");
+		return true;
 	}
 //-----------------------------------------------------------------
 
 	public static void Palindrome(int num) {
-		// example 545, 151, 34543, 343, 171, 48984 
+		// example 545, 151, 34543, 343, 171, 48984
 		temp = num;
 		while (num > 0) {
 			store = num % 10;
 			sum = sum * 10 + store;
 			num = num / 10;
 		}
-		if(temp == sum) {
+		if (temp == sum) {
 			System.out.println("palindrome number");
-		}else {
-			System.out.println("not palindrome"); 
+		} else {
+			System.out.println("not palindrome");
 		}
 	}
-	
+
 	public static void String_Palindrome() {
-		// Ex:- ava,1221
-		String rev = "";
-		Scanner s1 = new Scanner(System.in);
-		System.out.println("Enter a string/number to check if it is a palindrome");  
-		String str = s1.nextLine();
-		int length = str.length();
-		for (int i = length-1; i > str.length(); i--) {
-			rev = rev + str.charAt(i);
-		}
-		if(str.equals(rev)) {
-			System.out.println("Entered string/number is a palindrome."); 
-		}else {
-			System.out.println("Entered string/number isn't a palindrome."); 
-		}	
+		// Ex:- example 545, 151, 34543, 343, 171, 48984
+		// string like LOL, MADAM
+		String original, reverse = ""; // Objects of String class
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a string/number to check if it is a palindrome");
+		original = in.nextLine();
+		int length = original.length();
+		for (int i = length - 1; i >= 0; i--)
+			reverse = reverse + original.charAt(i);
+		if (original.equals(reverse))
+			System.out.println("Entered string/number is a palindrome.");
+		else
+			System.out.println("Entered string/number isn't a palindrome.");
+
 	}
 // -----------------------------------------------------------------------------
-	
 
+	
+	static void fact(int num) {
+		int fact=1;
+		for (int j = 1; j <= num; j++) {
+			fact = fact*j;
+		}
+		System.out.println("Factorial of "+num+" is: "+fact); 
+		
+	}
 }
