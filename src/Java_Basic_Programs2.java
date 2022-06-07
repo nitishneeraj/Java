@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Java_Basic_Programs2 {
+public class Java_Basic_Programs2 extends Star_Pattern{
 	static int n1 = 0, n2 = 1, n3, sum = 0, temp, store;
 
 	static void Fibonacci(int count) {
@@ -87,9 +87,11 @@ public class Java_Basic_Programs2 {
 		System.out.println("1. Fibonacci ");
 		System.out.println("2. Prime Number ");
 		System.out.println("3. Armstrong Number ");
-		System.out.println("4. ");
+		System.out.println("4. Generate Random Number");
 		System.out.println("5. palindrome");
 		System.out.println("6. Factorial ");
+		System.out.println("7. Print Pattern ");
+
 		System.out.print("Please enter your choice : ");
 
 		int value = s1.nextInt();
@@ -106,15 +108,16 @@ public class Java_Basic_Programs2 {
 			num = num / 10;
 		}
 		if (sum == temp) {
-			System.out.println(temp + " number is a Armstrong.\n");
-		}else {
-			System.out.println(temp + " isn't a Armstrong\n");
+			System.out.print(temp + " number is a Armstrong.\n");
+		} else {
+			System.out.print(temp + " isn't a Armstrong\n");
 		}
 		System.out.println("");
 
 	}
 
 	static void Palindrome() {
+
 		// example 545, 151, 34543, 343, 171, 48984
 		// string like:- LOL, MADAM
 		String original, reverse = ""; // Objects of String class
@@ -130,21 +133,28 @@ public class Java_Basic_Programs2 {
 			System.out.println("Entered string/number isn't a palindrome.");
 		System.out.println("");
 	}
+	
+	static int scan1() {
+		Scanner s1 = new Scanner(System.in);
+		int option2 = s1.nextInt();
+		return option2;
+	}
 
 	public static void main(String[] args) {
+		Star_Pattern st1 = new Star_Pattern();
 		boolean loop_terminate = true;
 
 		while (true) {
 			int a = print();
 			switch (a) {
 			case 1: {
+				loop_terminate = true;
 				while (loop_terminate) {
 					System.out.println("\n1.Fibonacci Series using loop ");
 					System.out.println("2.Fibonacci Series using recursion ");
 					System.out.println("3.Return to Main Menu");
 					System.out.print("Please enter your choice : ");
-					Scanner s1 = new Scanner(System.in);
-					int option2 = s1.nextInt();
+					int option2 =  scan1();
 					switch (option2) {
 					case 1: {
 						System.out.print("\nEnter a number : ");
@@ -171,14 +181,14 @@ public class Java_Basic_Programs2 {
 			}
 				break;// never forget to add this break statement
 
-			case 2: {
+				case 2: {
+					loop_terminate = true;
 				while (loop_terminate) {
 					System.out.println("\n1.Prime Number  ");
 					System.out.println("2.Prime Number Another way ");
 					System.out.println("3.Return to Main Menu");
 					System.out.print("Please enter your choice : ");
-					Scanner s1 = new Scanner(System.in);
-					int option2 = s1.nextInt();
+					int option2 =  scan1();
 					switch (option2) {
 					case 1: {
 						System.out.println("");
@@ -218,6 +228,13 @@ public class Java_Basic_Programs2 {
 				break;
 			}
 			case 4: {
+				int min = 200;
+				int max = 400;
+				// Generate random int value from 200 to 400
+				System.out.println("Random value of type int between " + min + " to " + max + ":");
+				int b = (int) (Math.random() * (max - min + 1) + min);
+				System.out.println(b);
+				break;
 
 			}
 			case 5: {
@@ -225,13 +242,13 @@ public class Java_Basic_Programs2 {
 				break;
 			}
 			case 6: {
+				loop_terminate = true;
 				while (loop_terminate) {
 					System.out.println("\n1.Factorial Program using loop ");
 					System.out.println("2.Factorial Program using recursion ");
 					System.out.println("3.Return to Main Menu");
 					System.out.print("Please enter your choice : ");
-					Scanner s1 = new Scanner(System.in);
-					int option2 = s1.nextInt();
+					int option2 =  scan1();
 					switch (option2) {
 					case 1: {
 						System.out.print("\nEnter a number : ");
@@ -259,9 +276,177 @@ public class Java_Basic_Programs2 {
 			}
 				break;// never forget to add this break statement
 			case 7: {
+				loop_terminate = true;
+				while (loop_terminate) {
+					System.out.println("\n1.Start Pattern ");
+					System.out.println("2.Number Pattern ");
+					System.out.println("3.Character Pattern ");
+					System.out.println("4.Return to Main Menu");
+					System.out.print("Please enter your choice : ");
+					int option2 =  scan1();
+					switch (option2) {
+					case 1: {
+						while (loop_terminate) {
+							System.out.println("\n1.Right Triangle Star Pattern ");
+							System.out.println("2.Left Triangle Star Pattern ");
+							System.out.println("3.Pyramid Star Pattern ");
+							System.out.println("4.Diamond Shape Pattern ");
+							System.out.println("5.Downward Triangle Star Pattern ");
+							System.out.println("6.Mirrored Right Triangle Star Pattern ");
+							System.out.println("7.Reverse Pyramid Star Pattern ");
+							System.out.println("8.Right Down Mirror Star Pattern ");
+							System.out.println("9.Right Pascal's Triangle ");
+							System.out.println("10.Left Pascal's Triangle ");
+							System.out.println("11.Sandglass Star Pattern ");
+							System.out.println("12.Alphabet Star Pattern ");
+							System.out.println("13.Triangle Star Pattern ");
+							System.out.println("14.Down Triangle Pattern ");
+							System.out.println("15.Diamond Star Pattern ");
+							System.out.println("16.Return to Main Menu");
+							System.out.print("Please enter your choice : ");
+							Scanner s11 = new Scanner(System.in);
+							int option3 = s11.nextInt();
+							switch (option3) {
+							case 1: {
+								st1.Right_Triangle_Star_Pattern();
+								break;
+							}
+							case 2: {
+								st1.Left_Triangle_Star_Pattern();
+								break;
+							}
+							case 3: {
+								st1.Pyramid_Star_Pattern();
+								break;
+							}
+							case 4: {
+								st1.Diamond_Shape_Pattern();
+								break;
+							}
+							case 5: {
+								st1.Downward_Triangle_Star_Pattern();
+								break;
+							}
+							case 6: {
+
+								break;
+							}
+							case 7: {
+
+								break;
+							}
+							case 8: {
+
+								break;
+							}
+							case 9: {
+
+								break;
+							}
+							case 10: {
+
+								break;
+							}
+							case 11: {
+
+								break;
+							}
+							case 12: {
+
+								break;
+							}
+							case 13: {
+
+								break;
+							}
+							case 14: {
+
+								break;
+							}
+							case 15: {
+
+								break;
+							}
+							case 16: {
+								loop_terminate = false;
+								break;
+							}
+							default:
+								System.out.println("Invalid option");
+								break;
+							}
+						}
+
+					}
+						break;
+					case 2: {
+						loop_terminate = true;
+						while (loop_terminate) {
+							System.out.println("\n1.Pattern-1 ");
+							System.out.println("2.Pattern-2 ");
+							System.out.println("3.Pattern-3 ");
+							System.out.println("4.Pattern-4 ");
+							System.out.println("5.Pattern-5 ");
+							System.out.println("6.Pattern-6 ");
+							System.out.println("7.Pattern-7 ");
+							System.out.println("8.Pattern-8 ");
+							System.out.println("9.Pattern-9 ");
+							System.out.println("10.Pattern-10 ");
+							System.out.println("11.Pattern-11 ");
+							System.out.println("12.Pattern-12 ");
+							System.out.println("13.Pattern-13 ");
+							System.out.println("14.Pattern-14 ");
+							System.out.println("15.Pattern-15 ");
+							System.out.println("16.Pattern-16 ");
+							System.out.println("17.Pattern-17 ");
+							System.out.println("18.Pattern-18 ");
+							System.out.println("19.Pattern-19 ");
+							System.out.println("20.Pattern-20 ");
+							System.out.println("21.Pattern-21 ");
+							System.out.println("22.Return to Main Menu");
+							System.out.print("Please enter your choice : ");
+							int option3 =  scan1();
+							switch (option3) {
+							case 1: {
+
+								break;
+							}
+							case 2: {
+
+								break;
+							}
+							case 22: {
+								loop_terminate = false;
+								break;
+							}
+							default:
+								System.out.println("Invalid option");
+								break;
+							}
+						}
+						
+					}
+					break;
+					case 3: {
+						
+					}
+					case 4: {
+						loop_terminate = false;
+						break;
+					}
+					default:
+						System.out.println("Invalid option");
+						break;
+					}
+				}
+			}
+				break;
+			case 44: {
 
 			}
-			case 44: {
+			case 8: {
+				
+				
 
 			}
 
@@ -273,5 +458,4 @@ public class Java_Basic_Programs2 {
 			}
 		}
 	}
-
 }

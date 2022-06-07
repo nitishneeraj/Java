@@ -27,6 +27,7 @@ public class Test_Program {
 				// do something here
 				break;
 			case 3:
+				loop_terminate = true;
 
 				while (loop_terminate) {
 					// Inner menu options
@@ -63,5 +64,6 @@ public class Test_Program {
 				System.out.println("Invalid option");
 			}
 		}
+		
 	}
 }
