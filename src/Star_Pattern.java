@@ -60,7 +60,7 @@ public class Star_Pattern {
 			for (int j = 0; j <= i; j++) {
 				System.out.print(" ");
 			}
-			for (int j = value -1; j > i; j--) {
+			for (int j = value - 1; j > i; j--) {
 				System.out.print("* ");
 			}
 			System.out.println(" ");
@@ -70,11 +70,137 @@ public class Star_Pattern {
 	void Downward_Triangle_Star_Pattern() {
 		int value = scanner();
 		for (int i = 0; i < value; i++) {
-			for (int j = value -1; j > i; j--) {
+			for (int j = value - 1; j > i; j--) {
 				System.out.print("*");
 			}
 			System.out.println("");
 		}
 	}
 
+	void Mirrored_Right_Triangle_Star_Pattern() {
+		int value = scanner();
+		for (int i = 0; i < value; i++) {
+			for (int j = value - 1; j > i; j--) {
+				System.out.print(" ");
+			}
+			for (int j = 0; j < i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+	void Reverse_Pyramid_Star_Pattern() {
+		int value = scanner();
+		for (int i = 0; i <= value - 1; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print(" ");
+			}
+			for (int j = value - 1; j >= i; j--) {
+				System.out.print("*" + " ");
+			}
+			System.out.println("");
+		}
+	}
+
+	void Right_Down_Mirror_Star_Pattern() {
+		int value = scanner();
+		for (int i = 0; i <= value - 1; i++) {
+			for (int j = 0; j < i; j++) {
+				System.out.print(" ");
+			}
+			for (int j = value - 1; j > i; j--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+	void Right_Pascals_Triangle() {
+		int value = scanner();
+		for (int i = 0; i <= value - 1; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for (int i = 0; i <= value - 1; i++) {
+			for (int j = value - 1; j > i; j--) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+	}
+
+	void Sandglass_Star_Pattern() {
+		int value = scanner();
+		for (int i = 0; i <= value - 1; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print(" ");
+			}
+			for (int j = value - 1; j >= i; j--) {
+				System.out.print("*" + " ");
+			}
+			System.out.println("");
+		}
+		for (int i = 0; i <= value - 1; i++) {
+			for (int j = value - 1; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int j = 0; j <= i; j++) {
+				System.out.print("*" + " ");
+			}
+			System.out.println("");
+		}
+	}
+
+	void Left_Pascals_Triangle() {
+		int value = scanner();
+		for (int i = 0; i <= value - 1; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print(" ");
+			}
+			for (int j = value - 1; j > i; j--) {
+				System.out.print("  ");
+			}
+			for (int j = 0; j < i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for (int i = 0; i <= value - 1; i++) {
+			for (int j = value - 1; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int j = 0; j < i; j++) {
+				System.out.print("  ");
+			}
+			for (int j = value - 1; j > i; j--) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+	}
+
+	void Alphabet_Star_Pattern() {
+		System.out.println("Comming soon");
+	}
+
+	void Diamond_Star_Pattern() {
+		System.out.println("Comming soon");
+	}
+
+	void Down_Triangle_Pattern() {
+		System.out.println("Comming soon");
+	}
+
+	void Triangle_Star_Pattern() {
+		System.out.println("Comming soon");
+	}
+
+	// -----------------------------------------------------------------------------------
+
+	void Pattern_1() {
+
+	}
 }

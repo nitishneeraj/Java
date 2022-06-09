@@ -328,43 +328,43 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 								break;
 							}
 							case 6: {
-
+								st1.Mirrored_Right_Triangle_Star_Pattern();
 								break;
 							}
 							case 7: {
-
+								st1.Reverse_Pyramid_Star_Pattern();
 								break;
 							}
 							case 8: {
-
+								st1.Right_Down_Mirror_Star_Pattern();
 								break;
 							}
 							case 9: {
-
+								st1.Right_Pascals_Triangle();
 								break;
 							}
 							case 10: {
-
+								st1.Left_Pascals_Triangle();
 								break;
 							}
 							case 11: {
-
+								st1.Sandglass_Star_Pattern();
 								break;
 							}
 							case 12: {
-
+								st1.Alphabet_Star_Pattern();
 								break;
 							}
 							case 13: {
-
+								st1.Triangle_Star_Pattern();
 								break;
 							}
 							case 14: {
-
+								st1.Down_Triangle_Pattern();
 								break;
 							}
 							case 15: {
-
+								st1.Diamond_Star_Pattern();
 								break;
 							}
 							case 16: {
@@ -408,7 +408,7 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 							int option3 =  scan1();
 							switch (option3) {
 							case 1: {
-
+								st1.Pattern_1();
 								break;
 							}
 							case 2: {
