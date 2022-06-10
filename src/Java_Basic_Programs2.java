@@ -142,6 +142,7 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 
 	public static void main(String[] args) {
 		Star_Pattern st1 = new Star_Pattern();
+		Number_Pattern n1 = new Number_Pattern();
 		boolean loop_terminate = true;
 
 		while (true) {
@@ -408,11 +409,55 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 							int option3 =  scan1();
 							switch (option3) {
 							case 1: {
-								st1.Pattern_1();
+								n1.Pattern_1();
 								break;
 							}
 							case 2: {
-
+								n1.Pattern_2();
+								break;
+							}
+							case 3: {
+								n1.Pattern_3();
+								break;
+							}
+							case 4: {
+								//n1.Pattern_4();
+								break;
+							}
+							case 5: {
+								n1.Pattern_5();
+								break;
+							}
+							case 6: {
+								n1.Pattern_6();
+								break;
+							}
+							case 7: {
+								n1.Pattern_7();
+								break;
+							}
+							case 9: {
+								n1.Pattern_9();
+								break;
+							}
+							case 11: {
+								n1.Pattern_11();
+								break;
+							}
+							case 12: {
+								n1.Pattern_12();
+								break;
+							}
+							case 13: {
+								n1.Pattern_13();
+								break;
+							}
+							case 14: {
+								n1.Pattern_14();
+								break;
+							}
+							case 15: {
+								n1.Pattern_15();
 								break;
 							}
 							case 22: {
