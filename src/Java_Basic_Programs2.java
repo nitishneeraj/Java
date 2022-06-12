@@ -460,6 +460,14 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 								n1.Pattern_15();
 								break;
 							}
+							case 16: {
+								n1.Pattern_16();
+								break;
+							}
+							case 17: {
+								n1.Pattern_17();
+								break;
+							}
 							case 22: {
 								loop_terminate = false;
 								break;
