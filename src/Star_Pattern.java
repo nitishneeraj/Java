@@ -4,7 +4,7 @@ public class Star_Pattern {
 
 	static int scanner() {
 		Scanner s1 = new Scanner(System.in);
-		System.out.print("\nEnter number to star/Number pattern:- ");
+		System.out.print("\nEnter number to star/Number/Character_Number pattern:- ");
 		int num = s1.nextInt();
 		return num;
 	}

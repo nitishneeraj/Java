@@ -161,13 +161,13 @@ public class Number_Pattern extends Star_Pattern {
 			for (int j = 0; j < i; j++) {
 				System.out.print(" ");
 			}
-			for (int j = i+1; j <= value; j++) {
+			for (int j = i + 1; j <= value; j++) {
 				System.out.print(j);
 			}
 			System.out.println();
 		}
-		for (int i = value-1; i >= 1; i--) {
-			for (int j = 1; j <= i-1; j++) {
+		for (int i = value - 1; i >= 1; i--) {
+			for (int j = 1; j <= i - 1; j++) {
 				System.out.print(" ");
 			}
 			for (int j = i; j <= value; j++) {
@@ -177,5 +177,42 @@ public class Number_Pattern extends Star_Pattern {
 		}
 	}
 
+	void Pattern_18() {
+		int value = st1.scanner();
+		for (int i = 1; i <= value; i++) {
+			for (int j = value; j > i; j--) {
+				System.out.print("1");
+			}
+				for (int j = 0; j < i; j++) {
+					System.out.print(i);
+				}
+				System.out.println();
+			}
+		}
+	
+		void Pattern_19() {
+			int value = st1.scanner();
+			for (int i = 1; i <= value; i++) {
+				int num =i;
+				for (int j = 1; j <= i; j++) {
+					System.out.print(num+" ");
+					num = num +value -j;
+				}
+				System.out.println();
+			}
+		}
+		
+		void Pattern_20() {
+			int value = st1.scanner();
+			for (int i = 1; i <= value; i++) {
+				for (int j = i; j <= value; j++) {
+					System.out.print(j);
+				}
+				for (int j = 1; j < i; j++) {
+					System.out.print(j);
+				}
+				System.out.println();
+			}
+		}
 
 }

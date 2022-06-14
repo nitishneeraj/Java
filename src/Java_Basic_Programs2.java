@@ -91,6 +91,7 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 		System.out.println("5. palindrome");
 		System.out.println("6. Factorial ");
 		System.out.println("7. Print Pattern ");
+		System.out.println("8.  ");
 
 		System.out.print("Please enter your choice : ");
 
@@ -143,6 +144,7 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 	public static void main(String[] args) {
 		Star_Pattern st1 = new Star_Pattern();
 		Number_Pattern n1 = new Number_Pattern();
+		Character_Pattern ch1 = new Character_Pattern();
 		boolean loop_terminate = true;
 
 		while (true) {
@@ -420,10 +422,6 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 								n1.Pattern_3();
 								break;
 							}
-							case 4: {
-								//n1.Pattern_4();
-								break;
-							}
 							case 5: {
 								n1.Pattern_5();
 								break;
@@ -468,6 +466,18 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 								n1.Pattern_17();
 								break;
 							}
+							case 18: {
+								n1.Pattern_18();
+								break;
+							}
+							case 19: {
+								n1.Pattern_19();
+								break;
+							}
+							case 20: {
+								n1.Pattern_20();
+								break;
+							}
 							case 22: {
 								loop_terminate = false;
 								break;
@@ -476,13 +486,52 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 								System.out.println("Invalid option");
 								break;
 							}
-						}
-						
+						}	
 					}
 					break;
 					case 3: {
-						
+						loop_terminate = true;
+						while (loop_terminate) {
+							System.out.println("\n1.Right Triangle Alphabetic Pattern ");
+							System.out.println("2.Repeating Alphabet Pattern ");
+							System.out.println("3.K-shape Alphabet Pattern ");
+							System.out.println("4.Triangle Character Pattern ");
+							System.out.println("5.Diamond Character Pattern ");
+							System.out.println("6.Return to Main Menu");
+							System.out.print("Please enter your choice : ");
+							int option3 =  scan1();
+							switch (option3) {
+							case 1: {
+								ch1.Right_Triangle_Alphabetic_Pattern();
+								break;
+							}
+							case 2: {
+								//ch1.Repeating_Alphabet_Pattern();
+								break;
+							}
+							case 3: {
+								//ch1.K_shape_Alphabet_Pattern();
+								break;
+							}
+							case 4: {
+								//ch1.Triangle_Character_Pattern();
+								break;
+							}
+							case 5: {
+								//ch1.Diamond_Character_Pattern();
+								break;
+							}
+							case 6: {
+								loop_terminate = false;
+								break;
+							}
+							default:
+								System.out.println("Invalid option");
+								break;
+							}
+						}		
 					}
+					break;
 					case 4: {
 						loop_terminate = false;
 						break;
@@ -494,13 +543,13 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 				}
 			}
 				break;
-			case 44: {
-
-			}
 			case 8: {
-				
-				
-
+				System.out.println("Hekooo");
+				break;
+			}
+			case 9: {
+				System.out.println("Nign");
+				break;
 			}
 
 			case 0: {

@@ -27,7 +27,7 @@ public class Java_Basic_Programs {
 		//String_Palindrome();
 
 		// ----------fact()
-		 fact(5);
+		 //fact(5);
 
 	}
 
@@ -121,12 +121,5 @@ public class Java_Basic_Programs {
 // -----------------------------------------------------------------------------
 
 	
-	static void fact(int num) {
-		int fact=1;
-		for (int j = 1; j <= num; j++) {
-			fact = fact*j;
-		}
-		System.out.println("Factorial of "+num+" is: "+fact); 
-		
-	}
+	 
 }
