@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Java_Basic_Programs2 extends Star_Pattern{
 	static int n1 = 0, n2 = 1, n3, sum = 0, temp, store;
-
+	static Scanner s1 = new Scanner(System.in);
 	static void Fibonacci(int count) {
 		// example 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 etc.
 		System.out.print(n1 + " " + n2);
@@ -27,7 +27,7 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 	}
 
 	static int scanner() {
-		Scanner s1 = new Scanner(System.in);
+		
 		int num = s1.nextInt();
 		return num;
 	}
@@ -91,7 +91,9 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 		System.out.println("5. palindrome");
 		System.out.println("6. Factorial ");
 		System.out.println("7. Print Pattern ");
-		System.out.println("8.  ");
+		System.out.println("8. Compare Two Objects ");
+		System.out.println("9. Create Object in Java ");
+		System.out.println("10. Print ASCII Value ");
 
 		System.out.print("Please enter your choice : ");
 
@@ -99,6 +101,18 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 		return value;
 	}
 
+	static void Compare_obj() {
+		// equals() Method
+		
+		Double x = new Double(123.45555);  
+		//creating constructor of the Long class   
+		Long y = new Long(9887544);  
+		//invoking the equals() method   
+		System.out.println("Objects are not equal, hence it returns " + x.equals(y));  
+		System.out.println("Objects are equal, hence it returns " + x.equals(123.45555)); 
+		
+	}
+	
 	static void Armstrong(int num) {
 		// 153: 13 + 53 + 33 = 1 + 125+ 27 = 153
 		System.out.println(num);
@@ -141,6 +155,12 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 		return option2;
 	}
 
+	static void ASCII() {
+		 System.out.println("Enter a character: ");
+		    char c = s1.next().charAt(0);
+		    int asciivalue1 = c;
+		    System.out.println("The ASCII value of " + c + " is: " + asciivalue1);  
+	}
 	public static void main(String[] args) {
 		Star_Pattern st1 = new Star_Pattern();
 		Number_Pattern n1 = new Number_Pattern();
@@ -307,7 +327,7 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 							System.out.println("15.Diamond Star Pattern ");
 							System.out.println("16.Return to Main Menu");
 							System.out.print("Please enter your choice : ");
-							Scanner s11 = new Scanner(System.in);
+							Scanner s11 = new Scanner(System	.in);
 							int option3 = s11.nextInt();
 							switch (option3) {
 							case 1: {
@@ -506,15 +526,15 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 								break;
 							}
 							case 2: {
-								//ch1.Repeating_Alphabet_Pattern();
+								ch1.Repeating_Alphabet_Pattern();
 								break;
 							}
 							case 3: {
-								//ch1.K_shape_Alphabet_Pattern();
+								ch1.K_shape_Alphabet_Pattern();
 								break;
 							}
 							case 4: {
-								//ch1.Triangle_Character_Pattern();
+								ch1.Triangle_Character_Pattern();
 								break;
 							}
 							case 5: {
@@ -544,11 +564,16 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 			}
 				break;
 			case 8: {
-				System.out.println("Hekooo");
+				Compare_obj();
 				break;
 			}
 			case 9: {
-				System.out.println("Nign");
+				Create_Object_all_types theobj = new Create_Object_all_types();
+				theobj.All_methods();
+				break;
+			}
+			case 10: {
+				ASCII();
 				break;
 			}
 
