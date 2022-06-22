@@ -107,7 +107,7 @@ public class Number_to_Word {
 
 	void Number_To_Word() {
 		Scanner input = new Scanner(System.in); // used to get input
-		int option1, option2 = 0;
+		int option1;
 		boolean loop_terminate = true; // flag used to terminate inner while loop
 
 		// Main Menu

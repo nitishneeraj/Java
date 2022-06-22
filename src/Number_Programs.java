@@ -13,13 +13,13 @@ public class Number_Programs {
 
 	public static void main(String[] args) {
 
-		int option1, option2 = 0;
+		int option1;
 		boolean loop_terminate = true; // flag used to terminate inner while loop
 
 		// Main Menu
 		while (true) {
 			// Main Menu options
-			System.out.println("\n1.Reverse a Number");
+			System.out.println("\n1.Reverse a Number"); 
 			System.out.println("2.Number to Word");
 			System.out.println("3.Sum of Natural Numbers");
 			System.out.println("4.Display Odd Numbers From 1 to 100");
@@ -28,6 +28,14 @@ public class Number_Programs {
 			System.out.println("7.Positive or Negative");
 			System.out.println("8.Find Smallest of Three Numbers");
 			System.out.println("9.Largest of Three Numbers");
+			System.out.println("10.Greatest Common Factor");
+			System.out.println("11. Swap Two Numbers Using Bitwise Operator(^)");
+			System.out.println("12. Find Square Root of a Number Without sqrt Method");
+			System.out.println("13. Alternate Prime Numbers");
+			System.out.println("12. Find Square Root of a Number Without sqrt Method");
+			System.out.println("12. Find Square Root of a Number Without sqrt Method");
+			System.out.println("12. Find Square Root of a Number Without sqrt Method");
+			System.out.println("12. Find Square Root of a Number Without sqrt Method");
 			System.out.println("0.Exit main menu");
 			
 
@@ -69,6 +77,22 @@ public class Number_Programs {
 				break;
 			case 9:
 				num_oth.Largest_of_Three_Numbers();
+				break;
+			case 10:
+				GCF theGCF = new GCF();
+				theGCF.Greatest_Common_Factor();
+				break;
+			case 11:
+				Swap_no theBit = new Swap_no();
+				theBit.Swap_Two_Numbers_Using_Bitwise_Operator();
+				break;
+			case 12:
+				Square_Root square = new Square_Root();
+				square.FindSquareRoot();
+				break;
+			case 13:
+				AlternatePrimeNumber A_prime_no = new AlternatePrimeNumber();
+				A_prime_no.Alternate_Prime_Number();
 				break;
 			case 0:
 				return; // terminate outer menu

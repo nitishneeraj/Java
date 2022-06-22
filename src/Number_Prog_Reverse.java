@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Number_Prog_Reverse {
 
-	Number_Programs n1 = new Number_Programs();
+	 Number_Programs n1 = new Number_Programs();
 
-	void Reverse_using_while_loop() {
+	 void Reverse_using_while_loop() {
 		System.out.print("\nEnter the number that you want to reverse: ");
 		int num = n1.scan();
 		int rev = 0;
@@ -40,8 +40,8 @@ public class Number_Prog_Reverse {
 
 	public void Reverse() {
 		Scanner input = new Scanner(System.in); // used to get input
-		int option1, option2 = 0;
-		boolean loop_terminate = true; // flag used to terminate inner while loop
+		int option1;
+		//boolean loop_terminate = true; // flag used to terminate inner while loop
 
 		// Main Menu
 		while (true) {

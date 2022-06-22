@@ -1,10 +1,9 @@
-import java.util.Iterator;
 
 public class Character_Pattern {
 	
-	Star_Pattern st1 = new Star_Pattern(); 
+	static Star_Pattern st1 = new Star_Pattern(); 
 	
-	void Right_Triangle_Alphabetic_Pattern() {
+	static void Right_Triangle_Alphabetic_Pattern() {
 		int value = st1.scanner();
 		System.out.println("Character value");
 		int alphabet =value;

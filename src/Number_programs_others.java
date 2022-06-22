@@ -78,7 +78,7 @@ public class Number_programs_others {
 
 	void SmallestNumber() {
 		int a, b, c, smallest, temp;
-		List<Integer> value = scan1();
+		//List<Integer> value = scan1();
 		// System.out.println(value);
 		a = l1.get(0);
 		b = l1.get(1);
@@ -89,7 +89,7 @@ public class Number_programs_others {
 	}
 
 	void Largest_of_Three_Numbers() {
-		List<Integer> value = scan1();
+		//List<Integer> value = scan1();
 		// System.out.println(value);
 		int a = l1.get(0);
 		int b = l1.get(1);

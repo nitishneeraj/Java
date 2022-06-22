@@ -1,4 +1,3 @@
-import java.util.Iterator;
 
 public class Number_Pattern extends Star_Pattern {
 

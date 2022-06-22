@@ -12,7 +12,7 @@ public class Create_Object_all_types {
 	
 		Scanner input = new Scanner(System.in); 
 		int option1;
-		boolean loop_terminate = true;
+		//boolean loop_terminate = true;
 		while (true) {
 			System.out.println("\n1. Using new Keyword");
 			System.out.println("2. Using clone() method");
