@@ -4,7 +4,7 @@ class Test {
 		// t1.character();
 		// t1.missNumber();
 		//math(9);
-		test3();
+		test4();
 		//t1.divide();
 	}
 	
@@ -28,7 +28,33 @@ class Test {
 		sum = a + b;
 		System.out.println(sum);
 	}
-
+	
+	static void test4() {
+		int num = 600;
+		boolean[] bool = new boolean[num];
+		for (int i = 0; i < bool.length; i++) {
+			bool[i] = true;
+		}
+		for (int i = 2; i < Math.sqrt(num); i++) {
+			//System.out.println(i);
+			if (bool[i] == true) {
+				System.out.println("Value = "+i);
+				for (int j = (i * i); j < num; j = j + i) {
+					//System.out.print(j+" ");
+					bool[j] = false;	// Because 4,6 already pehle hi false ho gya h
+				}
+				//System.out.println();
+			} 
+			//System.out.println(i);
+		}
+		System.out.println("\nList of prime numbers upto given number are : ");
+		for (int i = 2; i < bool.length; i++) {
+			if (bool[i] == true) {
+				System.out.print(i+" ");
+				}
+		}
+	}
+	
 	
 	static void test3() {
 			int i, flag = 0,num=11;

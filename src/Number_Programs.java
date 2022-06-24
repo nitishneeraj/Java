@@ -32,10 +32,10 @@ public class Number_Programs {
 			System.out.println("11. Swap Two Numbers Using Bitwise Operator(^)");
 			System.out.println("12. Find Square Root of a Number Without sqrt Method");
 			System.out.println("13. Alternate Prime Numbers");
-			System.out.println("12. Find Square Root of a Number Without sqrt Method");
-			System.out.println("12. Find Square Root of a Number Without sqrt Method");
-			System.out.println("12. Find Square Root of a Number Without sqrt Method");
-			System.out.println("12. Find Square Root of a Number Without sqrt Method");
+			System.out.println("14. nth Prime Number");
+			System.out.println("15. Sieve of Eratosthenes Approach");
+			System.out.println("16. ");
+			System.out.println("17. ");
 			System.out.println("0.Exit main menu");
 			
 
@@ -93,6 +93,20 @@ public class Number_Programs {
 			case 13:
 				AlternatePrimeNumber A_prime_no = new AlternatePrimeNumber();
 				A_prime_no.Alternate_Prime_Number();
+				break;
+			case 14:
+				Nth_Prime_no n1 = new Nth_Prime_no();
+				n1.NthPrimeNumber();
+				break;
+			case 15:
+				Sieve_of_Eratosthenes SOF = new Sieve_of_Eratosthenes();
+				SOF.NthPrimeNumber();
+				break;
+			case 16:
+				
+				break;
+			case 17:
+
 				break;
 			case 0:
 				return; // terminate outer menu
