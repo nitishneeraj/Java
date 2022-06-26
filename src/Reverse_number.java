@@ -20,9 +20,9 @@ public class Reverse_number {
 		String rev = "";
 		for (int i = 0; i < str.length() ; i++) {
 			ch = str.charAt(i);
-			System.out.println(ch);
+			//System.out.println(ch);
 			rev = ch+rev;
-			System.out.println(rev);
+			//System.out.println(rev);
 		}
 		return rev;
 		
