@@ -27,7 +27,7 @@ public class Number_Programs {
 			System.out.println("7. Positive or Negative");
 			System.out.println("8. Find Smallest of Three Numbers");
 			System.out.println("9. Largest of Three Numbers");
-			System.out.println("10. Greatest Common Factor");
+			System.out.println("10. Greatest Common Factor(GCF)");
 			System.out.println("11. Swap Two Numbers Using Bitwise Operator(^)");
 			System.out.println("12. Find Square Root of a Number Without sqrt Method");
 			System.out.println("13. Alternate Prime Numbers");

@@ -83,8 +83,8 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 
 	static int print() {
 		Scanner s1 = new Scanner(System.in);
-		System.out.println("\n0. Exit");
-		System.out.println("1. Fibonacci ");
+		
+		System.out.println("\n1. Fibonacci ");
 		System.out.println("2. Prime Number ");
 		System.out.println("3. Armstrong Number ");
 		System.out.println("4. Generate Random Number");
@@ -94,8 +94,9 @@ public class Java_Basic_Programs2 extends Star_Pattern{
 		System.out.println("8. Compare Two Objects ");
 		System.out.println("9. Create Object in Java ");
 		System.out.println("10. Print ASCII Value ");
+		System.out.println("0. Exit");
 
-		System.out.print("Please enter your choice : ");
+		System.out.print("Please Enter your choice : ");
 
 		int value = s1.nextInt();
 		return value;
