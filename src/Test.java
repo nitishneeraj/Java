@@ -4,8 +4,8 @@ class Test {
 		// t1.character();
 		// t1.missNumber();
 		// math(9);
-		//test5();
-		t1.divide();
+		Test6();
+		//t1.divide();
 	}
 
 	void divide() {
@@ -14,6 +14,11 @@ class Test {
 		int b2 = b1 / 10; // Quotient
 		System.out.println(b);
 		System.out.println(b2);
+	}
+	
+	static void Test6() {
+		int firstHalf = 2025 %  (int) Math.pow(10, 4 / 2);
+		System.out.println(firstHalf);
 	}
 
 	static void test5() {

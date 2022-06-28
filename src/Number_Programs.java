@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Number_Programs {
 	static Scanner s1 = new Scanner(System.in);
 	static Number_Prog_Reverse num = new Number_Prog_Reverse();
-	static Number_to_Word num1  = new Number_to_Word();
-	static Number_programs_others  num_oth = new Number_programs_others();
+	static Number_to_Word num1 = new Number_to_Word();
+	static Number_programs_others num_oth = new Number_programs_others();
 
 	static int scan() {
 		int num = s1.nextInt();
@@ -15,11 +15,10 @@ public class Number_Programs {
 
 		int option1;
 		boolean loop_terminate = true; // flag used to terminate inner while loop
-
 		// Main Menu
 		while (true) {
 			// Main Menu options
-			System.out.println("\n1. Reverse a Number"); 
+			System.out.println("\n1. Reverse a Number");
 			System.out.println("2. Number to Word");
 			System.out.println("3. Sum of Natural Numbers");
 			System.out.println("4. Display Odd Numbers From 1 to 100");
@@ -36,8 +35,15 @@ public class Number_Programs {
 			System.out.println("15. Sieve of Eratosthenes Approach");
 			System.out.println("16. Xylem and Phloem Number");
 			System.out.println("17. Recursion");
+			System.out.println("18. Tech Number");
+			System.out.println("19. ATM Program");
+			System.out.println("20. Spy Number");
+			System.out.println("21. Peterson Number");
+			System.out.println("22. Neon Number");
+			System.out.println("23. Buzz Number");
+			System.out.println("24. Krishnamurthy Number");
+			System.out.println("25. ");
 			System.out.println("0.Exit main menu");
-			
 
 			System.out.print("Please enter your choice : ");
 			option1 = s1.nextInt();
@@ -62,13 +68,13 @@ public class Number_Programs {
 				num_oth.Display_Even_Numbers();
 				break;
 			case 6:
-				System.out.print("\nEnter a number: ");   
-				double number=s1.nextDouble();   
-				if (num_oth.checkPerfectSquare(number))   
-				System.out.println("Yes, the given number is perfect square.");  
-				else  
-				System.out.print("No, the given number is not perfect square.");    
-				break;				
+				System.out.print("\nEnter a number: ");
+				double number = s1.nextDouble();
+				if (num_oth.checkPerfectSquare(number))
+					System.out.println("Yes, the given number is perfect square.");
+				else
+					System.out.print("No, the given number is not perfect square.");
+				break;
 			case 7:
 				num_oth.Positive_or_Negative();
 				break;
@@ -104,13 +110,59 @@ public class Number_Programs {
 				break;
 			case 16:
 				Xylem_and_Phloem_Number XP = new Xylem_and_Phloem_Number();
-				//825122	8, 2	10	 2, 5, 1, 2	  10	 10 = 10	Xylem
-				//761312	7, 2	9	 6, 1, 3, 1	  11	 9 ≠ 11	   Phloem
+				// 825122 8, 2 10 2, 5, 1, 2 10 10 = 10 Xylem
+				// 761312 7, 2 9 6, 1, 3, 1 11 9 ≠ 11 Phloem
 				XP.XylemPhloem();
 				break;
 			case 17:
 				Recursion rs = new Recursion();
 				rs.recursionExample1();
+				break;
+			case 18:
+				Tech_Number num = new Tech_Number();
+				// 2025
+				// 20*25=2025
+				num.tech_Number();
+				break;
+			case 19:
+				ATM_Program ATM = new ATM_Program();
+				ATM.ATM_Prog();
+				break;
+			case 20:
+				Spy_Number sp = new Spy_Number();
+				// 132
+				// 1+3+2=6
+				// 1*3*2=6
+				sp.Spy_No();
+				break;
+			case 21:
+				Peterson_Number peter = new Peterson_Number();
+				// 145
+				// 1! + 4! + 5! = 145
+				peter.peterson_No();
+				break;
+
+			case 22:
+				Neon_Number Neon = new Neon_Number();
+				// 9
+				// 9*9 = 81
+				// 8+1 = 9
+				// 9 == 9
+				Neon.Neon_No();
+				break;
+			case 23:
+				Buzz_Number b1 = new Buzz_Number();
+				// check whether the number ends with 7, is divisible by 7
+				b1.Buzz_No();
+				break;
+			case 24:
+				Krishnamurthy_Number num1 = new Krishnamurthy_Number();
+				// Number = 145  
+				// = 1! + 4! + 5!  
+				num1.Krishnamurthy_No();
+				break;
+			case 25:
+
 				break;
 			case 0:
 				return; // terminate outer menu
