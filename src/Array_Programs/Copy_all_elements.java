@@ -3,18 +3,17 @@ package Array_Programs;
 import java.util.Scanner;
 
 public class Copy_all_elements {
+	Java_Array_Programs JP = new Java_Array_Programs();
+	Scanner sc = new Scanner(System.in);
 
 	void CopyElements() {
-		
-		Scanner sc = new Scanner(System.in);
-		System.out.print("\nEnter the lenght of array : ");
-		int num1 = sc.nextInt();
-		
+		int num1 = JP.scan();
+
 		int[] arr1 = new int[num1];
 		for (int i = 0; i < arr1.length; i++) {
 			arr1[i] = sc.nextInt();
 		}
-		
+
 		int[] arr2 = new int[arr1.length];
 
 		for (int i = 0; i < arr1.length; i++) {
@@ -29,7 +28,7 @@ public class Copy_all_elements {
 
 		System.out.println("Elements of new array: ");
 		for (int i = 0; i < arr2.length; i++) {
-			System.out.print(arr2[i] + " ");
+			System.out.print(arr2[i] + " "); // Print Second array
 		}
 	}
 }
