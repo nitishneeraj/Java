@@ -10,7 +10,7 @@ public class Binary_Search {
 		int arr[] = {6,5,4,3,2,1,0,2,3,7,9,8,66};
 		Arrays.sort(arr);
 
-		// Remove Duplicate Elements
+		// Remove Duplicate Element
 		int j = 0;
 		for (int i = 0; i < arr.length - 1; i++) { // Index out of bound
 
